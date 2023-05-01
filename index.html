@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Калькулятор доходности вкладов</h2>
+    <div class="flex-container">
+      <div>
+        <p>Сумма вклада</p><br>
+        <p>Годовая % ставка по депозиту</p>
+        <p>Срок размещения денежных средств (дней)</p>
+        <p>Периодичность капитализации % (дней)</p>
+        <p>Количество дней в году</p>
+        <p>Капитализация</p>
+      </div>
+      <div>
+        <input type="number" id="sum" value="10000" min="10000" max="100000000" step="1000" onchange="range.value = sum.value"><br>
+        <input type="range" id="range" value="10000" min="10000" max="100000000" step="1000" oninput="sum.value = range.value"><br>
+        <input type="number" id="rate" value="10" min="0" max="100"><br>
+        <input type="number" id="time" value="90" min="0"><br>
+        <input type="number" id="period" value="30" min="0"><br>
+        <input type="number" id="day" value="365" min="365" max="366"><br>
+        <input type="radio" name="typePercent" checked>Простой %
+        <input type="radio" name="typePercent">Сложный %<br>
+      </div>
+    </div>
+    <button type="button" onclick="calculationDeposit()">Рассчитать</button>
+    <div id="result" class="result"></div>
+  </body>
+</html>

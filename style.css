@@ -1,0 +1,32 @@
+.flex-container {
+  display: flex;
+  background-color: rgb(208, 245, 247);
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  width: 800px;
+}
+.flex-container div {
+  padding: 10px;
+  width: 395px;
+}
+p {
+  font-weight: 500;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+input, button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  margin: 6.5px 5px;
+}
+.result {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  padding: 10px;
+  text-decoration: underline;
+}
+#sum, #range, #rate, #time, #period, #day {
+  width: 300px;
+}
